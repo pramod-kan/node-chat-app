@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Chat app</title>
+    
+    <script defer src="https://node-chat-app-ps.herokuapp.com/socket.io/socket.io.js"></script>
+    <script defer src="client.js"></script>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <div class="container">
+        <!-- <div class="message right">Pramod:how are you??</div>
+        <div class="message left">Ramond:Im fine</div> -->
+    </div>
+    <div class="send">
+        <form action="#" id="send-container">
+            <input type="text" name="messageInp" id="messageInp" class="text">
+            <button class="btn" type="submit">Send</button>
+            <button id="btn1" type="submit">emoji</button>
+          
+            <script src="https://cdn.jsdelivr.net/npm/emoji-button@latest/dist/index.min.js"></script>
+            <script>
+                const btn1 = document.getElementById("btn1");
+                const input = document.querySelector('.text');
+                const picker = new EmojiButton({
+                    position:'right-end'
+                })
+                picker.on('emoji',function(emoji){
+                  input.value +=emoji;  
+                })
+                btn1.addEventListener('click',function(){
+                    picker.pickerVisible ? picker.hidePicker() : picker.showPicker(btn1)
+                })
+            </script>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+body{
+    background: #CB356B;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #BD3F32, #CB356B);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #BD3F32, #CB356B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.container{
+    max-width: 955px;
+    /* background-color: red; */
+    margin: auto;
+    height: 60vh;
+    /* padding: 33px; */
+    overflow-y: auto;
+    margin-bottom: 23px;
+}
+.message{
+    background-color:#0EC8BB;
+    width: 24%;
+  
+padding: 10px;
+margin: 17px 1px;
+border: 2px ;
+width: 250px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+border-radius: 12px;
+}
+.left{
+    float: left;
+    clear: both;
+    width: auto;
+}
+.right{
+    float: right;
+    clear: both;
+    width: auto;
+}
+#send-container{
+    text-align: center;
+    max-width: 985px;
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+#messageInp{
+    width: 92%;
+    border: 2px solid;
+    border-radius: 6px;
+    height: 34px;
+}
+.btn{
+    cursor: pointer;
+    border: 2px;
+    border-radius: 6px;
+    height: 35px;
+}
+#btn1{
+    cursor: pointer;
+    border: 2px;
+    border-radius: 6px;
+    height: 35px; 
+}
