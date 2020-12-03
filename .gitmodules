@@ -1,3 +1,0 @@
-[submodule "nodeserver"]
-	path = nodeserver
-	url = ./nodeserver/
